@@ -1,7 +1,9 @@
+// sk_test_51MTmXIIZTkvJDKXehkjJqpTBBmkhCGgcriQj8iq4KTuxrsXpbhpVdG8bHV52h9YbZhr1FLzpw2ctErPKmrrZf4PU00Cbsay3kj
+// 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
 const express = require("express");
 var cors = require("cors");
 const stripe = require("stripe")(
-  "sk_test_51MTmXIIZTkvJDKXehkjJqpTBBmkhCGgcriQj8iq4KTuxrsXpbhpVdG8bHV52h9YbZhr1FLzpw2ctErPKmrrZf4PU00Cbsay3kj"
+  "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"
 );
 
 const app = express();
