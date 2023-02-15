@@ -8,7 +8,6 @@ const stripe = require("stripe")(
 
 const apiKey = process.env.API_KEY;
 
-
 const app = express();
 app.use(cors());
 app.use(express.static("public"));
@@ -44,7 +43,8 @@ app.post("/checkout", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: lineItems,
     mode: "payment",
-    success_url: "http://localhost:3000/success",
+    success_url: "https://react-stripe-ltxl.vercel.app",
+    // success_url: "http://localhost:3000/success",
     cancel_url: "http://localhost:3000/cancel",
   });
 
