@@ -6,7 +6,8 @@ const stripe = require("stripe")(
   "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"
 );
 
-const apiKey = process.env.VARIABLE_NAME;
+// const apiKey = process.env.VARIABLE_NAME;
+process.env.STRIPE_API_KEY;
 
 const app = express();
 app.use(cors());
