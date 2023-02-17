@@ -19,7 +19,7 @@ function NavbarComponent() {
       body: JSON.stringify({ items: cart.items }),
     })
       .then((response) => {
-        return response.json();
+        return response.json.stringify();
       })
       .then((response) => {
         if (response.url) {
