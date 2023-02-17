@@ -18,9 +18,9 @@ function NavbarComponent() {
       },
       body: JSON.stringify({ items: cart.items }),
     })
-      .then((response) => {
-        return response.json();
-      })
+      // .then((response) => {
+      //   return response.json();
+      // })
       .then((response) => {
         if (response.url) {
           window.location.assign(response.url); // Forwarding user to Stripe
