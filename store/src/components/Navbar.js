@@ -16,7 +16,7 @@ function NavbarComponent() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON({ items: cart.items }),
+      body: JSON.stringify({ items: cart.items }),
     })
       .then((response) => {
         return response.json();
