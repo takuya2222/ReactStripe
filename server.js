@@ -4,8 +4,8 @@ var cors = require("cors");
 // const stripe = require("stripe")();
 
 // const apiKey = process.env.VARIABLE_NAME;
-process.env.STRIPE_API_KEY;
-console.log(process.env.STRIPE_API_KEY);
+process.env.VARIABLE_NAME;
+console.log(process.env.VARIABLE_NAME);
 
 const app = express();
 app.use(cors());
