@@ -16,10 +16,10 @@ function NavbarComponent() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ items: cart.items }),
+      body: JSON({ items: cart.items }),
     })
       .then((response) => {
-        return response.json.stringify();
+        return response.json();
       })
       .then((response) => {
         if (response.url) {
