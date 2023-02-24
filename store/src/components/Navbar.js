@@ -3,6 +3,7 @@ import { useState, useContext } from "react";
 import { CartContext } from "../CartContext";
 import CartProduct from "./CartProduct";
 
+// テスト
 function NavbarComponent() {
   const cart = useContext(CartContext);
 
