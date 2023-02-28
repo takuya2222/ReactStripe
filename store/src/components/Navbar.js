@@ -12,7 +12,7 @@ function NavbarComponent() {
   const handleShow = () => setShow(true);
 
   const checkout = async () => {
-    await fetch("https://react-stripe-six.vercel.app/", {
+    await fetch("https://react-stripe-y1vy.vercel.app/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
