@@ -1,6 +1,6 @@
-Access-Control-Allow-Origin: https://react-stripe-rn7c.vercel.app/;   // 特定のサイトを許可する
-Access-Control-Allow-Origin: *;   // 全てのサイトを許可する(危険なのでプロダクトでは基本的には使わない)
-Access-Control-Allow-Headers "X-Requested-With, Origin, X-Csrftoken, Content-Type, Accept";  // この辺は使うフレームワークにより異なるが許可するヘッダーを定義しておく。
+// Access-Control-Allow-Origin: https://react-stripe-rn7c.vercel.app/;   // 特定のサイトを許可する
+// Access-Control-Allow-Origin: *;   // 全てのサイトを許可する(危険なのでプロダクトでは基本的には使わない)
+// Access-Control-Allow-Headers "X-Requested-With, Origin, X-Csrftoken, Content-Type, Accept";  // この辺は使うフレームワークにより異なるが許可するヘッダーを定義しておく。
 
 // sk_test_51MTmXIIZTkvJDKXehkjJqpTBBmkhCGgcriQj8iq4KTuxrsXpbhpVdG8bHV52h9YbZhr1FLzpw2ctErPKmrrZf4PU00Cbsay3kj
 const express = require("express");
