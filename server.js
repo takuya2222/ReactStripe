@@ -2,6 +2,16 @@
 // Access-Control-Allow-Origin: *;   // 全てのサイトを許可する(危険なのでプロダクトでは基本的には使わない)
 // Access-Control-Allow-Headers "X-Requested-With, Origin, X-Csrftoken, Content-Type, Accept";  // この辺は使うフレームワークにより異なるが許可するヘッダーを定義しておく。
 
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PUT, PATCH, DELETE, OPTION"
+  );
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  next();
+});
+
 // sk_test_51MTmXIIZTkvJDKXehkjJqpTBBmkhCGgcriQj8iq4KTuxrsXpbhpVdG8bHV52h9YbZhr1FLzpw2ctErPKmrrZf4PU00Cbsay3kj
 const express = require("express");
 var cors = require("cors");
